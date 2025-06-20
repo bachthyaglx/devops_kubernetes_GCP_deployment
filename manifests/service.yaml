@@ -4,6 +4,7 @@ metadata:
   name: dwk-environments-svc
 spec:
   type: LoadBalancer
+  loadBalancerIP: 34.14.21.38 # Replace with your desired static IP (match with GCP reserved IP)
   selector:
     app: dwk-environments
   ports:
