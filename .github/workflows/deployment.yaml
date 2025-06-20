@@ -53,8 +53,14 @@ jobs:
       - name: Setup Kustomize
         uses: imranismail/setup-kustomize@v2.1.0
 
-      - name: Deploy to GKE
+      - name: Debug Show built image and kustomize output
         run: |
+          echo "Using image: $IMAGE_TAG"
           kustomize edit set image PROJECT/IMAGE=$IMAGE_TAG
+          echo "=== Kustomize output ==="
+          kustomize build .
+
+      - name: 🚀 Deploy to GKE
+        run: |
           kustomize build . | kubectl apply -f -
           kubectl rollout status deployment $SERVICE
