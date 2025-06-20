@@ -19,3 +19,4 @@ kubectl describe svc dwk-environments-svc
 
 ![alt text](image.png)
 
+![alt text](image-1.png)
