@@ -18,3 +18,4 @@ kubectl describe svc dwk-environments-svc
 ## Frontend
 
 ![alt text](image.png)
+
