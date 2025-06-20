@@ -6,4 +6,4 @@ resources:
 
 images:
   - name: PROJECT/IMAGE
-    newName: europe-west1-docker.pkg.dev/pingpong-463502/my-web-repo/dwk-environments
+    newName: europe-west1-docker.pkg.dev/pingpong-463502/gcp-repo/dwk-environments
